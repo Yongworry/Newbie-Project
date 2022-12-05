@@ -6,7 +6,7 @@ const feedRouter = require('./routes/feed');
 const mongoose = require("mongoose");
 
 const app = express();
-const port = process.env.PORT;
+const port = PORT;
 
 app.use(express.json());
 
@@ -27,7 +27,7 @@ app.use('/feed', feedRouter);
 
 // connect to MongoDB
 const OMongooseOption = { useNewUrlParser: true, useUnifiedTopology: true };
-mongoose.connect(process.env.MONGO_URI, OMongooseOption).then(
+mongoose.connect(MONGO_URI, OMongooseOption).then(
     () => { console.log("[Mongoose] Connection Complete!") },
     (err) => { console.log(`[Mongoose] Connection Error: ${ err }`) }
 );
