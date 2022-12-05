@@ -10,7 +10,7 @@ const port = process.env.PORT;
 
 app.use(express.json());
 
-const whitelist = ['http://newbie-project.vercel.app:3000'];
+const whitelist = ['http://newbie-project.vercel.app'];
 const corsOptions = {
     origin: (origin, callback) => {
         console.log('[REQUEST-CORS] Request from origin: ', origin);
