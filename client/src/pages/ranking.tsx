@@ -62,7 +62,7 @@ const RankingPage = (props: {}) => {
             <div className={"delete-item"} onClick={(e) => deleteSong(`${val._id}`)}>ⓧ</div>
             <div className={"like-item"} onClick={(e) => likeSong(`${val._id}`)}>b</div>
             <p className={"song-ranking"}>#{ (10*(NPageCount-1)) + i+1 }</p>
-            <p className={"feed-body"}>{ val.content } - { val.title }</p>
+            <p className={"feed-body"}>{ val.title } - { val.content }</p>
             <p className={"song-like"}>Likes: { val.likeCnt }</p>
           </div>
         )}

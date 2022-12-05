@@ -22,7 +22,7 @@ class FeedDB {
             let OSearchFilter = {};
             console.log(search);
             if (search !== ""){
-                OSearchFilter = {title:search};
+                OSearchFilter = {content:search};
             }
             const res = await FeedModel.find(OSearchFilter).sort({'likeCnt': -1}).limit(upBound).skip(downBound).exec();
             return { success: true, data: res };
