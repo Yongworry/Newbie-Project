@@ -1,1 +1,1 @@
-{"scripts": {"start": "cd seminar && npm start"}}
+{"scripts": {"start": "cd seminar && npm start & cd client && npm start"}}
