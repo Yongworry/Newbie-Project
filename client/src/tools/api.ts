@@ -1,3 +1,3 @@
-const SAPIBase = "https://newbie-project-production.up.railway.app:8080";
+const SAPIBase = "https://newbie-project-production.up.railway.app";
 
 export { SAPIBase };
